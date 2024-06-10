@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/menu_visitar_perfil"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_mostrar_opciones">
+
+        <menu>
+
+            <item
+                android:id="@+id/menu_visitar"
+                android:title="@string/menu_visitar"
+                android:icon="@drawable/m_visitar_perfil"/>
+
+        </menu>
+
+    </item>
+
+
+</menu>

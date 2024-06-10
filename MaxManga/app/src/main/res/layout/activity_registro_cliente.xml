@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cliente.Registro_Cliente">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRLCliente"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height"
+        android:background="@color/rosa">
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/TxtRegistrarCliente"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLDatosCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarRLCliente"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--Nombres-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <EditText
+                    android:id="@+id/Et_nombres_cl"
+                    android:hint="@string/Et_nombres_cl"
+                    android:inputType="textPersonName|textCapWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Edad-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <EditText
+                    android:id="@+id/Et_edad_cl"
+                    android:hint="@string/Et_edad_cl"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Email-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <EditText
+                    android:id="@+id/Et_email_cl"
+                    android:hint="@string/Et_email_cl"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <EditText
+                    android:id="@+id/Et_password_cl"
+                    android:hint="@string/Et_password_cl"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Repetir password-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
+                app:boxCornerRadiusBottomStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusBottomEnd="8dp">
+
+                <EditText
+                    android:id="@+id/Et_r_password_cl"
+                    android:hint="@string/Et_r_password_cl"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Registrar un cliente-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Btn_registrar_cl"
+                android:text="@string/Btn_registrar_cl"
+                android:textAllCaps="true"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!--Ya tiene una cuenta-->
+            <TextView
+                android:id="@+id/Txt_tengo_cuenta"
+                android:text="@string/Txt_tengo_cuenta"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:textStyle="bold"
+                android:layout_gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+</RelativeLayout>

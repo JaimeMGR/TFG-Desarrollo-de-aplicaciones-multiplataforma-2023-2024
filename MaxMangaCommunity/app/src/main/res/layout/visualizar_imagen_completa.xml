@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="500dp"
+    android:background="#ccc"
+    android:layout_gravity="center">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/Img_visualizar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+
+        android:id="@+id/Btn_cerrar_v"
+        android:text="@string/Btn_cerrar_v"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

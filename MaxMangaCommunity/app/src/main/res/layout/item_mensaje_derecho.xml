@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="9dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/mensaje"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:id="@+id/imagen_perfil_mensaje"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_perfil_mensaje"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/TXT_ver_mensaje"
+            android:text="@string/TXT_ver_mensaje"
+            android:layout_alignParentEnd="true"
+            android:textSize="18sp"
+            android:padding="8dp"
+            android:background="@drawable/backgrund_derecho"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/imagen_enviada_derecha"
+            android:layout_alignParentEnd="true"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_below="@id/mensaje"
+            android:padding="4dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/TXT_fecha"
+            android:text="@string/Hora_mensaje"
+            android:background="@drawable/backgrund_derecho"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/TXT_mensaje_visto"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/TXT_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

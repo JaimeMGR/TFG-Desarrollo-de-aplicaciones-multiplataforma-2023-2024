@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "636240274851",
+    "firebase_url": "https://maxmanga-community-ec2e2-default-rtdb.firebaseio.com",
+    "project_id": "maxmanga-community-ec2e2",
+    "storage_bucket": "maxmanga-community-ec2e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636240274851:android:a5244543f5cddb85e8a616",
+        "android_client_info": {
+          "package_name": "com.JaimeMGR.maxmangacommunity"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636240274851-3djf35lauicptfu8ni20lst3bjakp0i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.JaimeMGR.maxmangacommunity",
+            "certificate_hash": "faa26827e420f363b6fa834d340e116fe6140667"
+          }
+        },
+        {
+          "client_id": "636240274851-ht4ddg2tnmhorns9dqcnsenf38uf8t6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFsSYuoNv_YTSo3ifvzMh-sx4XdYbuERI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636240274851-ht4ddg2tnmhorns9dqcnsenf38uf8t6l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

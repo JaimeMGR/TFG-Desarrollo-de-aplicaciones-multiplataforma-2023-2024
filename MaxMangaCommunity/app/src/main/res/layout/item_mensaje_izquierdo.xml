@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <!--Imagen de perfil del usuario el cual nos envia un mensaje-->
+    <ImageView
+        android:id="@+id/imagen_perfil_mensaje"
+        android:layout_width="40dp"
+        android:scaleType="centerCrop"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_perfil_mensaje"/>
+
+        <!--Visualizar el mensaje-->
+        <TextView
+        android:id="@+id/TXT_ver_mensaje"
+        android:text="@string/TXT_ver_mensaje"
+        android:background="@drawable/background_izquierdo"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/imagen_perfil_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <!--Imagen enviada-->
+        <ImageView
+            android:id="@+id/imagen_enviada_izquierdo"
+            android:layout_toEndOf="@+id/imagen_perfil_mensaje"
+            android:layout_marginStart="5dp"
+            android:visibility="gone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_below="@id/mensaje"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/TXT_fecha"
+        android:text="@string/Hora_mensaje"
+        android:padding="4dp"
+        android:background="@drawable/background_izquierdo"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!--Mensaje se ha visto-->
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/TXT_mensaje_visto"
+        android:layout_below="@+id/TXT_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

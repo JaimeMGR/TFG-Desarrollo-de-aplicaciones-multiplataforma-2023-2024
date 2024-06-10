@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.ListaPdfAdmin">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRLListarPdf"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height"
+        android:background="@color/rosa">
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/Txt_titulo_libro"
+            android:text="@string/Txt_titulo_libro"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/Txt_categoria_libro"
+            android:text="@string/Txt_categoria_libro"
+            android:layout_below="@+id/Txt_titulo_libro"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textAllCaps="true"/>
+
+        <View
+            android:background="#ccc"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </RelativeLayout>
+
+    <!--Buscar libro-->
+    <EditText
+        android:id="@+id/Et_buscar_libro_admin"
+        android:hint="@string/Et_buscar_libro_admin"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:drawableStart="@drawable/ic_buscar"
+        android:layout_below="@id/toolbarRLListarPdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--Lista de libros-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rv_libros_admin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Et_buscar_libro_admin"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_libro_admin" />
+
+</RelativeLayout>

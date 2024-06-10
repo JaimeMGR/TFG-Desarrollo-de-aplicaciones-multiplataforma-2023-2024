@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <application
+        android:name=".Administrador.MisFunciones"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/icono_libro_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icono_libro_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaxManga"
+        tools:targetApi="31">
+        <activity
+            android:name=".Cliente.EditarPerfilCliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.TopDescargados"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.TopVistos"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.DetalleLibro_Cliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.ListaPdfCliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.Login_Cliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".MainActivityCliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Cliente.Registro_Cliente"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.EditarPerfilAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".LeerLibro"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.DetalleLibro"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.ActualizarLibro"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.ListaPdfAdmin"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.Agregar_Pdf"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.Agregar_Categoria"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.Login_Admin"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Administrador.Registrar_Admin"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Elegir_rol"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Bienvenida"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

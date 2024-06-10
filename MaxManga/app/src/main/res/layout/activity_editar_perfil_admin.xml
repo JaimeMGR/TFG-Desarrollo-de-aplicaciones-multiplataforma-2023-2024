@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.EditarPerfilAdmin">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:background="@color/rosa"
+        android:id="@+id/toolbarEditarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height">
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:src="@drawable/ic_regresar"
+            android:background="@android:color/transparent"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="@string/Txt_editar_perfil_admin"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@id/toolbarEditarPerfil"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/perfilRL"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true">
+
+                <!--Imagen del perfil-->
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_perfil_admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_img_perfil"
+                    android:scaleType="centerCrop"/>
+
+                <!--Cambiar la imagen-->
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/FbCambiarImg"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fabSize="mini"
+                    android:src="@drawable/ic_cambiar_imagen"/>
+
+            </RelativeLayout>
+
+            <!--Nombres-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/TILNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/perfilRL"
+                android:layout_marginTop="10dp"
+                app:boxCornerRadiusBottomEnd="8dp"
+                app:boxCornerRadiusTopStart="8dp"
+                app:boxCornerRadiusTopEnd="8dp"
+                app:boxCornerRadiusBottomStart="8dp">
+
+                <EditText
+                    android:id="@+id/Et_a_nombres"
+                    android:hint="@string/Et_a_nombres"
+                    android:inputType="textPersonName|textCapWords"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--Actualizar la información-->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Btn_actualizar_info"
+                android:text="@string/Btn_actualizar_info"
+                android:textAllCaps="true"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/TILNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

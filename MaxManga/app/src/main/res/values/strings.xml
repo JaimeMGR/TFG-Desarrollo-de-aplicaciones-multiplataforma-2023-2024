@@ -1,0 +1,157 @@
+<resources>
+    <string name="app_name">MaxManga</string>
+    <string name="Menu_panel">Categorías</string>
+    <string name="Menu_cuenta">Cuenta</string>
+    <string name="Titulo_RL_Admin">Título</string>
+
+    <string name="Txt_rol">Por favor elija un rol</string>
+    <string name="Btn_rol_administrador">Administrador</string>
+    <string name="Btn_rol_cliente">Cliente</string>
+
+
+    <string name="TxtRegistroAdmin">Registro de administrador</string>
+
+    <string name="Et_nombres_admin">Nombres</string>
+    <string name="Et_email_admin">Email</string>
+    <string name="Et_password_admin">Contraseña</string>
+    <string name="Et_R_password_admin">Repita la contraseña</string>
+    <string name="Btn_registrar_admin">Registrarme</string>
+
+    <string name="CerrarSesionAdmin">Cerrar sesión</string>
+
+
+    <string name="TxtLoginAdmin">Login administradores</string>
+    <string name="Btn_login_admin">Ingresar</string>
+    <string name="Txt_tengo_cuenta">Tengo una cuenta</string>
+
+    <string name="Btn_agregar_categoria">Agregar categoría</string>
+    <string name="Txt_agregar_categoria">Agregar categoría</string>
+    <string name="Et_categoria">Ingrese categoría</string>
+    <string name="Agregar_categoria_BD">Agregar</string>
+    <string name="Item_nombre_cat_a">Nombre categoria</string>
+    <string name="Buscar_categoria">Buscar categoría</string>
+    <string name="Txt_agregar_libro">Agregar libro</string>
+
+    <string name="Et_titulo_libro">Libros</string>
+    <string name="Et_descripcion_libro">Descripción libro</string>
+    <string name="Tv_categoria_libro">Categoría</string>
+    <string name="Btn_subir_libro">Subir</string>
+
+    <string name="Txt_titulo_libro">Libros</string>
+    <string name="Txt_categoria_libro">Categoría</string>
+    <string name="Et_buscar_libro_admin">Buscar libro</string>
+
+    <string name="Txt_titulo_libro_item">Título libro</string>
+    <string name="Txt_descripcion_libro_item">Descripción libro</string>
+    <string name="Txt_categoria_libro_admin">Categoria</string>
+    <string name="Txt_tamaño_libro_admin">5MB</string>
+    <string name="Txt_fecha_libro_admin">dd/MM/yyyy</string>
+
+    <string name="Txt_actualizar_libro">Actualizar libro</string>
+    <string name="Btn_actualizar_libro">Actualizar</string>
+
+    <string name="Txt_detalle_libro">Detalle libro</string>
+    <string name="titulo_libro_D">Titulo libro</string>
+    <string name="Txt_categoria_D">Categoria: </string>
+    <string name="categoria_D"> -- </string>
+    <string name="Txt_fecha_D">Fecha :</string>
+    <string name="fecha_D"> -- </string>
+    <string name="Txt_tamaño_D">Tamaño :</string>
+    <string name="tamaño_D"> -- </string>
+    <string name="Txt_vistas_D">Visitas :</string>
+    <string name="vistas_D"> -- </string>
+    <string name="Txt_descargas_D">Descargas :</string>
+    <string name="descargas_D"> -- </string>
+    <string name="Txt_paginas_D">Páginas :</string>
+    <string name="paginas_D"> -- </string>
+    <string name="Txt_descripcion_D">Descripción: </string>
+    <string name="descripcion_D"> -- </string>
+
+    <string name="Btn_leer_libro">Leer</string>
+
+    <string name="Txt_leer_libro">Lectura del libro</string>
+
+    <!--Perfil admin-->
+    <string name="nombres_admin">Nombres: </string>
+    <string name="Txt_nombres_admin"> -- </string>
+    <string name="email_admin">Email: </string>
+    <string name="Txt_email_admin"> -- </string>
+    <string name="tiempo_registro_admin">Miembro desde: </string>
+    <string name="Txt_tiempo_registro_admin"> -- </string>
+    <string name="rol_admin">Rol: </string>
+    <string name="Txt_rol_admin"> -- </string>
+    <string name="Txt_mas_opciones">Más opciones: </string>
+
+    <string name="EditarPerfilAdmin">Editar perfil</string>
+    <string name="Txt_editar_perfil_admin">Editar perfil</string>
+    <string name="Et_a_nombres">Nombre</string>
+    <string name="Btn_actualizar_info">Actualizar</string>
+
+    <string name="TxtRegistrarCliente">Registro cliente</string>
+    <string name="Et_nombres_cl">Nombre</string>
+    <string name="Et_edad_cl">Edad</string>
+    <string name="Et_email_cl">Email</string>
+    <string name="Et_password_cl">Contraseña</string>
+    <string name="Et_r_password_cl">Repetir contraseña</string>
+    <string name="Btn_registrar_cl">Registrarme</string>
+
+    <!--Menu bottom cliente-->
+    <string name="Menu_dashboard_cl">Dashboard</string>
+    <string name="Menu_favoritos_cl">Favoritos</string>
+    <string name="Menu_cuenta_cl">Cuenta</string>
+    <string name="Titulo_RL_Cliente">Título</string>
+
+    <string name="CerrarSesionCliente">Cerrar sesión</string>
+
+    <!--Login clientes-->
+    <string name="TxtLoginCliente">Login cliente</string>
+    <string name="Btn_login_clitente">Ingresar</string>
+
+    <!--Login google-->
+    <string name="Txt_alternativa">Alternativa</string>
+    <string name="Btn_login_google">Ingresar con google</string>
+
+    <string name="Item_nombre_cat_c">Nombre categoría</string>
+
+    <string name="Et_buscar_libro_cliente">Buscar</string>
+
+    <string name="Btn_leer_libro_C">Leer</string>
+
+    <string name="Btn_descargar_libro_C">Descargar</string>
+    <string name="Btn_favoritos_libro_C">Agregar a favoritos</string>
+
+    <string name="Btn_mas_vistos">Mas vistos</string>
+    <string name="Btn_mas_descargados">Mas descargados</string>
+
+    <string name="Txt_comentarios">Comentarios</string>
+
+    <string name="Txt_agregar_comentario">Agregar comentario</string>
+    <string name="Et_agregar_comentario">Escriba un comentario</string>
+    <string name="Btn_comentar">Comentar</string>
+
+    <string name="Tv_nombres_c">Nombres cliente</string>
+    <string name="Tv_comentario_c">Comentario de usuario</string>
+    <string name="Tv_fecha_c">dd/MM/yyyy</string>
+
+    <string name="nombres_cliente">Nombre: </string>
+    <string name="Txt_nombres_cliente"> -- </string>
+    <string name="email_cliente">Email: </string>
+    <string name="TxT_email_cliente"> -- </string>
+    <string name="tiempo_registro_cliente">Miembro desde: </string>
+    <string name="Txt_tiempo_registro_cliente"> -- </string>
+    <string name="edad_cliente">Edad: </string>
+    <string name="Txt_edad_cliente"> -- </string>
+    <string name="rol_cliente">Rol: </string>
+    <string name="Txt_rol_cliente"> -- </string>
+
+    <string name="EditarPerfilCliente">Editar perfil</string>
+    <string name="Txt_editar_perfil_cliente">Editar perfil</string>
+    <string name="Et_c_nombres">Nombre</string>
+    <string name="Et_c_edad">Edad</string>
+
+    <string name="Crear_admin">Crear cuenta de administrador</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

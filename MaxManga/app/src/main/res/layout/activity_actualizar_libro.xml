@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador.ActualizarLibro">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRlActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/m_toolbar_height"
+        android:background="@color/rosa">
+
+
+        <ImageButton
+            android:id="@+id/Ib_regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:src="@drawable/ic_regresar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/Txt_actualizar_libro"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAllCaps="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#cccccc" />
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/IvActualizarL"
+        android:src="@drawable/actualizar_info"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/toolbarRlActualizar"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/IvActualizarL">
+
+        <!--Titulo-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/Et_titulo_libro"
+                android:hint="@string/Et_titulo_libro"
+                android:drawableStart="@drawable/ic_pdf"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Descripción-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/Et_descripcion_libro"
+                android:hint="@string/Et_descripcion_libro"
+                android:drawableStart="@drawable/ic_pdf"
+                android:drawablePadding="10dp"
+                android:inputType="textPersonName|textCapWords"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Categoria seleccionada-->
+        <TextView
+            android:id="@+id/Tv_categoria_libro"
+            android:hint="@string/Tv_categoria_libro"
+            app:drawableStartCompat="@drawable/ic_categoria"
+            app:drawableEndCompat="@drawable/ic_abajo"
+            android:drawablePadding="10dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:textColor="#000"
+            android:background="@drawable/forma_edittext"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Btn_actualizar_libro"
+            android:text="@string/Btn_actualizar_libro"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</RelativeLayout>
