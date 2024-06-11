@@ -19,33 +19,29 @@ import com.google.firebase.database.FirebaseDatabase
 
 class Inicio : AppCompatActivity() {
 
-    private lateinit var Btn_ir_logeo : MaterialButton
-    private lateinit var Btn_login_google : MaterialButton
+    private lateinit var Btn_ir_logeo: MaterialButton
+    private lateinit var Btn_login_google: MaterialButton
 
-    var firebaseUser : FirebaseUser?=null
-    private lateinit var auth : FirebaseAuth
+    var firebaseUser: FirebaseUser? = null
+    private lateinit var auth: FirebaseAuth
 
-    private lateinit var progressDialog : ProgressDialog
-    private lateinit var mGoogleSignInClient : GoogleSignInClient
+    private lateinit var progressDialog: ProgressDialog
+    private lateinit var mGoogleSignInClient: GoogleSignInClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicio)
 
         Btn_ir_logeo = findViewById(R.id.Btn_ir_logeo)
         Btn_login_google = findViewById(R.id.Btn_login_google)
-
-        /*Btn_ir_registros.setOnClickListener {
-            val intent = Intent(this@Inicio, RegistroActivity::class.java)
-            Toast.makeText(applicationContext, "Registros", Toast.LENGTH_SHORT).show()
-            startActivity(intent)
-        }*/
+        auth = FirebaseAuth.getInstance()
 
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Espere por favor")
         progressDialog.setCanceledOnTouchOutside(false)
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("636240274851-3djf35lauicptfu8ni20lst3bjakp0i8.apps.googleusercontent.com")
+            .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
 
@@ -53,15 +49,13 @@ class Inicio : AppCompatActivity() {
 
         Btn_ir_logeo.setOnClickListener {
             val intent = Intent(this@Inicio, LoginActivity::class.java)
-            Toast.makeText(applicationContext, "Login", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(applicationContext, "Login", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
 
         Btn_login_google.setOnClickListener {
             EmpezarinicioSesionGoogle()
         }
-
-
     }
 
     private fun EmpezarinicioSesionGoogle() {
@@ -69,20 +63,24 @@ class Inicio : AppCompatActivity() {
         googleSignInARL.launch(googleSignIntent)
     }
 
-
     private val googleSignInARL = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()) { resultado->
-        if (resultado.resultCode == RESULT_OK){
+        ActivityResultContracts.StartActivityForResult()
+    ) { resultado ->
+        if (resultado.resultCode == RESULT_OK) {
             val data = resultado.data
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
                 val account = task.getResult(ApiException::class.java)
                 AutenticarGoogleFirebase(account.idToken)
-            }catch (e: Exception){
-                Toast.makeText(applicationContext, "Ha ocurrido una excepción debido a ${e.message}", Toast.LENGTH_SHORT).show()
+            } catch (e: Exception) {
+                Toast.makeText(
+                    applicationContext,
+                    "Ha ocurrido una excepción debido a ${e.message}",
+                    Toast.LENGTH_SHORT
+                ).show()
 
             }
-        }else{
+        } else {
             Toast.makeText(applicationContext, "Cancelado", Toast.LENGTH_SHORT).show()
         }
     }
@@ -90,18 +88,18 @@ class Inicio : AppCompatActivity() {
     private fun AutenticarGoogleFirebase(idToken: String?) {
         val credencial = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credencial)
-            .addOnSuccessListener { authResult->
+            .addOnSuccessListener { authResult ->
                 /*Si el usuario es nuevo*/
-                if (authResult.additionalUserInfo!!.isNewUser){
+                if (authResult.additionalUserInfo!!.isNewUser) {
                     GuardarInfoBD()
                 }
                 /*Si el usuario ya se registró previamente*/
-                else{
+                else {
                     startActivity(Intent(this, MainActivity::class.java))
                     finishAffinity()
                 }
 
-            }.addOnFailureListener { e->
+            }.addOnFailureListener { e ->
                 Toast.makeText(applicationContext, "${e.message}", Toast.LENGTH_SHORT).show()
 
             }
@@ -116,7 +114,7 @@ class Inicio : AppCompatActivity() {
         val uidGoogle = auth.uid
         val correoGoogle = auth.currentUser?.email
         val n_Google = auth.currentUser?.displayName
-        val nombre_usuario_G : String = n_Google.toString()
+        val nombre_usuario_G: String = n_Google.toString()
 
         val hashmap = HashMap<String, Any?>()
         hashmap["uid"] = uidGoogle
@@ -127,7 +125,7 @@ class Inicio : AppCompatActivity() {
 
         /*Nuevos datos de usuario*/
         hashmap["nombres"] = ""
-        hashmap["apellidos"] =""
+        hashmap["apellidos"] = ""
         hashmap["edad"] = ""
         hashmap["profesion"] = ""
         hashmap["domicilio"] = ""
@@ -142,20 +140,23 @@ class Inicio : AppCompatActivity() {
             .addOnSuccessListener {
                 progressDialog.dismiss()
                 startActivity(Intent(applicationContext, MainActivity::class.java))
-                Toast.makeText(applicationContext, "Se ha registrado exitosamente", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    applicationContext,
+                    "Se ha registrado exitosamente",
+                    Toast.LENGTH_SHORT
+                ).show()
                 finishAffinity()
             }
-            .addOnFailureListener { e->
+            .addOnFailureListener { e ->
                 progressDialog.dismiss()
                 Toast.makeText(applicationContext, "${e.message}", Toast.LENGTH_SHORT).show()
             }
 
     }
 
-
-    private fun ComprobarSesion(){
+    private fun ComprobarSesion() {
         firebaseUser = FirebaseAuth.getInstance().currentUser
-        if (firebaseUser!=null){
+        if (firebaseUser != null) {
             val intent = Intent(this@Inicio, MainActivity::class.java)
             Toast.makeText(applicationContext, "La sesión está activa", Toast.LENGTH_SHORT).show()
             startActivity(intent)
