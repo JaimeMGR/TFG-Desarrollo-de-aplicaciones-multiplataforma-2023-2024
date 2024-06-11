@@ -48,6 +48,8 @@
 
     <string name="Et_buscar_usuario">Buscar usuario</string>
 
+    <string name="default_web_client_id">636240274851-3djf35lauicptfu8ni20lst3bjakp0i8.apps.googleusercontent.com</string>
+
     <!--Perfil de usuario-->
     <string name="P_n_usuario">Nombre de usuario</string>
     <string name="P_proveedor_txt">Proveedor: </string>
@@ -77,6 +79,8 @@
     <!--Editar imagen perfil-->
     <string name="BtnElegirImagenDe">Elegir imagen de</string>
     <string name="BtnActualizarImagen">Actualizar imagen</string>
+
+
 
     <!--Cuadro de diálogo seleccionar imagen de-->
     <string name="Txt_seleccionar_imagen">Seleccionar imagen de: </string>
@@ -126,6 +130,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
