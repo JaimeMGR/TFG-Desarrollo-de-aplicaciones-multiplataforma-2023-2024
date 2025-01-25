@@ -1,46 +1,18 @@
-# Portfolio de Jaime Molina Granados
+# 💫 About Me:
+🔭 I’m currently working on my final degree project, a web platform for a gym<br><br>💼 I’m looking to collaborate on: projects with JavaScript, HTML and CSS<br><br>🤝 I’m looking for help with integration of APIs in web applications<br><br>🌱 I’m currently learning PHP, JavaScript avanzado, Tailwind CSS and Docker<br><br>🔎 Fun fact: I like to listen to music when I program, it makes me think better
 
-¡Bienvenido a mi repositorio de GitHub! Soy Jaime Molina Granados, un apasionado de la tecnología, especializado en el desarrollo web y el soporte técnico. Este espacio es una recopilación de los proyectos que he desarrollado durante mi carrera y estudios, así como algunos proyectos personales que reflejan mi crecimiento como programador.
 
-## Sobre mí
-Soy programador Full Stack y técnico microinformático con experiencia en:
+## 🌐 Socials:
+[![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/jmolina.13) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/jmolina.13) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/Jaime Molina Granados) 
 
-- Desarrollo web: HTML, CSS, JavaScript, PHP, y frameworks modernos como Tailwind y Bootstrap.
-- Desarrollo multiplataforma: Java, Python, C#, Kotlin y Android Studio.
-- Bases de datos: MySQL, MongoDB, Firebase y Oracle.
-- Diseño gráfico: GIMP, Photoshop y Canva.
+# 💻 Tech Stack:
+![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase) ![Joomla](https://img.shields.io/badge/joomla-%235091CD.svg?style=for-the-badge&logo=joomla&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Gimp](https://img.shields.io/badge/Gimp-657D8B?style=for-the-badge&logo=gimp&logoColor=FFFFFF) ![Inkscape](https://img.shields.io/badge/Inkscape-e0e0e0?style=for-the-badge&logo=inkscape&logoColor=080A13) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Cisco](https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Unreal Engine](https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&logo=unrealengine&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=JaimeMGR&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=JaimeMGR&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=JaimeMGR&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-Actualmente estoy completando mis estudios de **Grado Superior en Desarrollo de Aplicaciones Web (DAW)** y **Desarrollo de Aplicaciones Multiplataforma (DAM)**, además de trabajar en proyectos relacionados con desarrollo web, diseño gráfico y mantenimiento de sistemas.
+---
+[![](https://visitcount.itsvg.in/api?id=JaimeMGR&icon=0&color=13)](https://visitcount.itsvg.in)
 
-## Proyectos destacados
-
-### [Módulos PHP en Dolibarr](https://github.com/JaimeMGR/Proyectos)
-- **Descripción**: Creación de módulos en PHP para el ERP Dolibarr.
-- **Características**: Gestión de datos y diseño personalizado de interfaces.
-- **Tecnologías usadas**: PHP, MySQL.
-
-### [Página web "Pollo Rico"](https://polloricoatarfe.wordpress.com/inicio/)
-- **Descripción**: Desarrollo de una página web para un restaurante.
-- **Características**: Sistema de reservas y catálogo en línea.
-- **Tecnologías usadas**: WordPress, MySQL.
-
-### Control de stock en tienda informática
-- **Descripción**: Aplicación web en JavaScript para gestionar el inventario de una tienda.
-- **Características**: Uso avanzado de arrays y objetos JSON, módulos con `import` y `export`.
-- **Tecnologías usadas**: JavaScript, HTML, CSS.
-
-### Atarfe Fighting
-- **Descripción**: Página principal de un club deportivo.
-- **Características**: Información detallada del club y diseño interactivo.
-- **Tecnologías usadas**: HTML, CSS, JavaScript.
-
-## Contacto
-
-Puedes saber más sobre mí y mis proyectos en mi portfolio personal:
-[https://jaimemolinagranados.wordpress.com/about/](https://jaimemolinagranados.wordpress.com/about/)
-
-**Email**: jaime.molina@example.com  
-**LinkedIn**: [linkedin.com/in/jaime-molina](https://www.linkedin.com/in/jaime-molina)  
-**GitHub**: [github.com/JaimeMGR](https://github.com/JaimeMGR)
-
-¡Gracias por visitar mi repositorio! Si tienes alguna pregunta o sugerencia, no dudes en contactarme.
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
